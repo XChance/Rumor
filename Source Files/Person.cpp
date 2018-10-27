@@ -35,8 +35,6 @@ void Person::update(Person &person) {
 
                 if(rumor.belief >= 50) {
                     person.rumor.belief += rumor.belief;
-                }else{
-                    person.rumor.belief += Random::get().intInRange(0, 1);
                 }
                 spreadAmt++;
             }
